@@ -18,13 +18,12 @@ from django.contrib import admin
 from django.urls import path
 from .views import home_page
 from .views import about_us
-from .views import contact_US
-  
+from .views import contact_us
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home_page),
     path('about_us', about_us),
-    path('contact_us', contact_US),
+    path('contact_us', contact_us),
     
 ]
  

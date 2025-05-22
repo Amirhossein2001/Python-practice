@@ -15,9 +15,12 @@ def about_us(request):
     return render(request, 'home_page.html', context)
 
 
-def contact_US(request):
+def contact_us(request):
 #    return HttpResponse('Hi this is Http res')
-     raise Http404("404")
+     context = {
+         'message' : 'This is contact us page'
+     }
+     return render(request, 'contact_us.html', context)
 
 
 
